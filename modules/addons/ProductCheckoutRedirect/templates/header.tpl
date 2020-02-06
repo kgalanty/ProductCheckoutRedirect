@@ -25,3 +25,4 @@ color: white;
 font-weight: bold;
 ">{$moduleName}</div>
 <div style="margin: 5px;background: white;border-radius: 5px;padding: 10px;">
+<div id="app" class="appcontainer">

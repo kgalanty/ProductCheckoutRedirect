@@ -1,6 +1,6 @@
 <?php
 
-namespace WHMCS\Module\Addon\ProductCheckoutRedirect\Models;
+namespace WHMCS\Module\Addon\ProductCheckoutRedirect\app\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,6 +16,6 @@ class Redirs extends Model
     protected $fillable = ['pid', 'redirurl'];
     public function product()
     {
-        return $this->hasOne(\WHMCS\Product\Product::class, 'id', 'pid')->select(array('id', 'name'));;
+        return $this->hasOne(\WHMCS\Product\Product::class, 'id', 'pid')->select(array('id', 'name'));
     }
 }

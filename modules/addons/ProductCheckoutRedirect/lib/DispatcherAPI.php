@@ -13,7 +13,7 @@ class DispatcherAPI {
             // Default to index if no action specified
             $action = 'index';
         }
-        $controller = 'WHMCS\\Module\\Addon\\ProductCheckoutRedirect\\Controllers\\'.ucfirst($controller);
+        $controller = 'WHMCS\\Module\\Addon\\ProductCheckoutRedirect\\app\\Controllers\\'.ucfirst($controller);
         
         if(class_exists($controller))
         {

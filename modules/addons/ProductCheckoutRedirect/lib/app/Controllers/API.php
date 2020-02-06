@@ -1,8 +1,8 @@
 <?php
 
-namespace WHMCS\Module\Addon\ProductCheckoutRedirect\Controllers;
-use WHMCS\Module\Addon\ProductCheckoutRedirect\Models\Redirs;
-use WHMCS\Module\Addon\ProductCheckoutRedirect\Models\Products;
+namespace WHMCS\Module\Addon\ProductCheckoutRedirect\app\Controllers;
+use WHMCS\Module\Addon\ProductCheckoutRedirect\app\Models\Redirs;
+use WHMCS\Module\Addon\ProductCheckoutRedirect\app\Models\Products;
 /**
 * Admin Area Controller
 */
@@ -34,7 +34,8 @@ class API {
     
     public function storeJSON()
     {
-        try{
+        try
+        {
             foreach($this->input['payload'] as $row)
             {
                 Redirs::where('pid', $row['pid'])->update(['redirurl' => $row['redirurl']]);

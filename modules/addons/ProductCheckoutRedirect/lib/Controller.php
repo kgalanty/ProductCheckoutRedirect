@@ -16,7 +16,6 @@ class Controller {
      */
     public function index($vars)
     {
-        //some logic
         return $vars;
     }
 }
